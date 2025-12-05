@@ -1,0 +1,305 @@
+{
+  "modules": [
+    {
+      "id": "module_1",
+      "title": "1. Lo Esencial (Saludos)",
+      "categories": [
+        {
+          "title": "1.1 Saludos de Supervivencia",
+          "phrases": [
+            "¡Buenos días! (Hasta la 1PM)",
+            "¡Buenas tardes!",
+            "¡Buenas noches! (Después de las 6PM)",
+            "¡Bienvenidos a casa!",
+            "¡Hola! / Adiós (Niños/Amigos)",
+            "¡Bienvenidos! (Plural)",
+            "¿Cómo está? (Formal)",
+            "¿Todo bien?",
+            "Gracias.",
+            "De nada / Por favor.",
+            "Me llamo...",
+            "Perdón / Disculpe."
+          ]
+        },
+        {
+          "title": "1.2 Rompehielos (Charla)",
+          "phrases": [
+            "Hace un sol precioso hoy, ¿verdad?",
+            "¿Es su primera vez en Marsa Alam?",
+            "¿De qué parte de España vienen?",
+            "¿Es su primera vez en Egipto?",
+            "¿Cuánto tiempo se quedan con nosotros?",
+            "¿Han probado el Mango / el Mar / la Discoteca?",
+            "¿Les gusta el hotel?",
+            "¿Ya han probado las actividades?",
+            "¿De dónde son?"
+          ]
+        },
+        {
+          "title": "1.3 Presentaciones y Vibe",
+          "phrases": [
+            "¡Buenos días chicos! ¿Cómo están hoy? Soy Amar del equipo de Animación.",
+            "¡Hola, buenos días! Soy Amar.",
+            "¡Hola! Soy Amar, de Animación.",
+            "Buenas tardes, bienvenidos a nuestro spa. Me llamo Amar.",
+            "¡Ustedes hacen que el ambiente sea mejor, de verdad!",
+            "¡Me gusta su energía!",
+            "Tienen muy buena vibra.",
+            "Opción A: ¿Cómo les va hoy?",
+            "Opción B: ¿Están listos para un poco de sol?",
+            "Opción C: ¿Todo bien con ustedes?"
+          ]
+        },
+        {
+          "title": "1.4 Cumplidos (Seguros)",
+          "phrases": [
+            "¿Dónde está esa sonrisa? ¡Ah, ahí está!",
+            "Usted es el campeón de la piscina hoy.",
+            "¡Guau, tienen un bronceado genial!",
+            "¡Me gustan sus gafas de sol, muy elegantes!",
+            "Tienen una familia hermosa."
+          ]
+        },
+        {
+          "title": "1.5 Humor Ligero",
+          "phrases": [
+            "¡Si no vienen conmigo hoy, estaré triste!",
+            "Vamos, necesito su energía en mi clase.",
+            "Si participan, prometo... ¡solo 50% trabajo y 50% diversión!",
+            "No se preocupen, no soy peligroso... ¡solo un poco!",
+            "¡Si no participan, estaré muy triste!",
+            "Se ven demasiado relajados... ¡creo que necesitan un poco de diversión!"
+          ]
+        },
+        {
+          "title": "1.6 Preguntas Comunes",
+          "phrases": [
+            "¿De dónde vienen?",
+            "¿En qué ciudad viven?",
+            "¿Cómo estuvo su vuelo?",
+            "¿Dónde estaban esta mañana? No los vi.",
+            "¿Qué han hecho hoy?",
+            "¿Fueron a la playa o a la piscina?",
+            "¿Fueron de excursión hoy?",
+            "¿Cuál es su plan para esta noche?",
+            "¿Dónde está su habitación? (Si necesitan ayuda)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_2",
+      "title": "2. Actividades (Deporte y Juegos)",
+      "categories": [
+        {
+          "title": "2.1 La Invitación",
+          "phrases": [
+            "Disculpen, ¿les gustaría unirse a nosotros para [Actividad]?",
+            "Empezamos Yoga en 5 minutos. ¡Es muy relajante!",
+            "Tenemos una actividad ahora, ¡vengan conmigo! Será divertido.",
+            "¡Únanse a Zumba! Solo 30 minutos y se sentirán genial.",
+            "Me encantaría verlos allí. ¡Prometido, se divertirán!",
+            "¡Hola chicos! ¡Es hora de Voleibol! ¿Quién es lo bastante fuerte?",
+            "¡Vamos! ¡La música de Aqua Gym está sonando! ¡No sean perezosos!",
+            "¡Hola chicos! Aqua gym en cinco minutos. ¡Vámonos!",
+            "¡Vamos chicos! ¡Solo por diversión, sin estrés! El agua está tibia.",
+            "¡Buenos días! ¡Espero que estén listos para un divertido juego de voleibol!",
+            "Persuasión: '¡Vamos! Solo 10 minutos. Es bueno para la energía.'",
+            "Persuasión: '¡No te preocupes! Yo te enseño. Es solo por diversión.'"
+          ]
+        },
+        {
+          "title": "2.2 Reglas del Juego (Árbitro)",
+          "phrases": [
+            "Por favor, párense detrás de la línea amarilla.",
+            "No crucen la línea, por favor.",
+            "Un paso atrás, por favor.",
+            "Es su turno / Te toca.",
+            "Esperen su turno.",
+            "¡Buena puntuación!",
+            "Dardos: Tienen tres lanzamientos (3 tiros).",
+            "Intenten dar en el centro rojo (La Diana).",
+            "¡Bravo! ¡Buen trabajo!",
+            "¡Oh! ¡Mala suerte! Inténtalo la próxima vez.",
+            "¡Siguiente jugador, por favor!"
+          ]
+        },
+        {
+          "title": "2.3 Espíritu de Equipo",
+          "phrases": [
+            "Necesito dos equipos, por favor. 3 personas aquí, 3 allá.",
+            "Uno a Cero para el Equipo Ferrari.",
+            "Uno a Uno. ¡Es un empate!",
+            "Cinco a Cinco. ¡El siguiente punto gana (Match Point)!",
+            "¡Bien todos! Equipo A a la izquierda, Equipo B a la derecha.",
+            "Cero a Cero. Servicio / Saque.",
+            "¡Guau! ¡El Equipo A gana! Dense la mano, buen juego."
+          ]
+        },
+        {
+          "title": "2.4 Comandos Aqua Gym",
+          "phrases": [
+            "¡Manos arriba! ¡Aplaudan! ¡Muevan las caderas!",
+            "¡Más rápido! ¡Una vez más!",
+            "Arriba / Abajo. Adelante / Atrás. Derecha / Izquierda.",
+            "Estiren los brazos. Sacudan las manos.",
+            "Roten los hombros.",
+            "¡Pateen el agua! ¡Más fuerte!",
+            "Inhalen... Exhalen.",
+            "¡Salpiquen agua! ¡Salpiquen a su amigo!",
+            "¡Buenos días! ¡Bienvenidos a Aqua Gym! ¿Están listos?",
+            "¡Bien, marchen en el agua! 1, 2, 3, 4!",
+            "¡Vamos! ¡Más energía! ¡Más rápido!",
+            "¡No paren! ¡Sigan así!",
+            "¡Última vez!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_3",
+      "title": "3. Responsabilidad (Seguridad/Niños)",
+      "categories": [
+        {
+          "title": "3.1 Reglas de Seguridad",
+          "phrases": [
+            "Por su seguridad.",
+            "Disculpe, señor. Nada de vidrio en la piscina, por favor. Es por su seguridad.",
+            "¡Hola campeón! Por favor camina despacio. Resbala.",
+            "Disculpe señor, solo vasos de plástico en la piscina.",
+            "Por favor, tengan cuidado.",
+            "Entiendo perfectamente. Hablaré con el gerente por usted ahora mismo.",
+            "Entiendo, señor. Me disculpo. Lo revisaré con el DJ ahora mismo.",
+            "Soy del equipo de Animación, pero le pediré a Recepción que le ayude.",
+            "Entiendo su problema."
+          ]
+        },
+        {
+          "title": "3.2 Kids Club (Niños)",
+          "phrases": [
+            "Por favor, llenen este formulario de registro.",
+            "¿Tiene alguna alergia?",
+            "Por favor, firme aquí.",
+            "Lo siento señor, debe quedarse con él. Es la regla del Hotel.",
+            "Niño: 'Quiero hacer pipí' -> Tú: 'Ok, busquemos el baño.'",
+            "Niño llora: '¿Qué pasa? ¿Quieres agua? ¿Dónde está mamá?'",
+            "Niño perdido: 'No se preocupen, los encontraremos.'",
+            "Niño perdido: '¿Cómo te llamas? ¿Cuál es tu número de habitación?'",
+            "Micrófono: 'Atención por favor. Tenemos un niño perdido llamado [Nombre] en el Kids Club.'",
+            "Recogida: '¡Aquí está! Se portó muy bien hoy.'",
+            "Lo siento, necesito que el padre firme la salida.",
+            "Incidente: 'Lo siento mucho. Se cayó mientras jugaba. Es un pequeño rasguño.'"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_4",
+      "title": "4. Vida Nocturna (Escenario)",
+      "categories": [
+        {
+          "title": "4.1 Micrófono y Presentación",
+          "phrases": [
+            "¡Damas y Caballeros, un fuerte aplauso para el mejor show de la semana!",
+            "¡¿Están listooooos?!",
+            "¡Buenas noches Damas y Caballeros! ¡Bienvenidos a nuestro show time!",
+            "¡Buenas noches a todos! ¿Están listos para el show?"
+          ]
+        },
+        {
+          "title": "4.2 Anuncios del Programa",
+          "phrases": [
+            "Esta noche a las [Hora], tenemos [Nombre del Show].",
+            "Esta noche a las 8:30, tenemos la Mini Disco para niños.",
+            "A las 9:30, tenemos el Sketch Cómico.",
+            "A las 10:00, ¡es hora del Bingo!",
+            "Esta noche tenemos un show especial. ¡No se lo pueden perder!",
+            "Yo también actúo — ¡vengan a apoyarme!",
+            "Empezamos a las 9:30 — vengan temprano, les guardé un asiento.",
+            "¡Quiero ver su energía esta noche!"
+          ]
+        },
+        {
+          "title": "4.3 Micrófono Mini Disco",
+          "phrases": [
+            "¡Aplaudan con las manos!",
+            "¡Dense la vuelta / Giren!",
+            "¡Salten! ¡Salten!",
+            "¿Dónde están los niños? ¡Hagan ruido!",
+            "¡La Mini Disco empieza en 5 minutos! ¡Niños, vengan al escenario!"
+          ]
+        },
+        {
+          "title": "4.4 Cierre",
+          "phrases": [
+            "¡Gracias a todos! Nos vemos mañana a las 10. ¡Buenas noches!",
+            "No olviden, mañana por la mañana... ¡Yoga a las 10!",
+            "Nos vemos mañana por la mañana. ¡Buenas noches!",
+            "No olviden, tenemos la fiesta a las 11 PM. ¡Nos vemos allí!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_5",
+      "title": "5. Negocios (Ventas)",
+      "categories": [
+        {
+          "title": "5.1 Venta de Entradas (Disco)",
+          "phrases": [
+            "¡Esta noche es especial! Vamos al [Nombre del Club].",
+            "¡Esta noche es LA noche!",
+            "¡Todos van! No querrán quedarse solos en la habitación, ¿verdad?",
+            "Es la fiesta más grande de la semana.",
+            "Esta noche es Ladies Night. Si se la pierden, se pierden la mejor fiesta.",
+            "La entrada cuesta solo 15 dólares, incluye transporte y una bebida.",
+            "¡Será increíble! ¿Les reservo dos asientos?",
+            "Piénsenlo: Taxi + Entrada + Bebida = 30$. ¡Conmigo solo 20$! ¡Es una ganga!",
+            "Saben, salir solos puede ser complicado. Pero con nosotros, es trato VIP.",
+            "Vamos con el Bus Oficial del Hotel, y estaré con ustedes todo el tiempo.",
+            "¡Considérenme su guardaespaldas personal esta noche!",
+            "Vamos juntos, volvemos juntos. Están seguros conmigo.",
+            "¡Vamos, sean mis invitados! Les guardé una mesa especial.",
+            "¡Quiero salir de fiesta con ustedes! Tomemos algo juntos allí.",
+            "¡Les prometo, si no les gusta, pueden echarme la culpa mañana!",
+            "¡Chicos, el bus está casi lleno! Solo me quedan 4 asientos.",
+            "Objeción (Cansado): '¡Pueden dormir en la playa mañana! Esta noche es para divertirse.'",
+            "Objeción (Próxima vez): '¡La próxima vez quizás tenga libre! Vamos, solo por una hora.'"
+          ]
+        },
+        {
+          "title": "5.2 Venta de Bingo",
+          "phrases": [
+            "¿Quién se siente con suerte esta noche?",
+            "¡El bote es de 200 Euros! ¡Imaginen qué pueden hacer con eso!",
+            "¡Solo quedan 3 cartones! ¿Quién quiere el número ganador?",
+            "¡Buenas noches! ¡Es hora del BINGO! Solo 5 Euros por el bote.",
+            "¿Quizás más tarde? -> '¡Vamos! ¡Te ves con suerte esta noche! ¡Quizás ganes los 100 Euros!'",
+            "Ok, dame uno. -> '¡Buena elección! ¡Buena suerte!'"
+          ]
+        },
+        {
+          "title": "5.3 Reseñas (TripAdvisor)",
+          "phrases": [
+            "Si disfrutaron sus vacaciones, por favor escriban una reseña para nosotros en TripAdvisor.",
+            "¿Puedo pedirles un pequeño favor? Las reseñas son muy importantes para mi trabajo.",
+            "Solo toma 1 minuto en TripAdvisor.",
+            "Por favor, no olviden mencionar mi nombre 'Amar'. Me ayuda con mi jefe.",
+            "¡Hola amigo! La pasamos genial hoy. ¡Hagámonos una selfie de recuerdo!",
+            "Dame tu teléfono, te la mando ahora (AirDrop / WhatsApp).",
+            "¿Puedo pedirte un gran favor? Esta foto me ayuda mucho con mi jefe.",
+            "Si subes esta foto y mencionas mi nombre, ¡recibo un bono! ¿Me ayudas?"
+          ]
+        },
+        {
+          "title": "5.4 Partida (Despedida)",
+          "phrases": [
+            "¡Buen vuelo! (Viaje seguro)",
+            "¡Espero verlos de nuevo el próximo año!",
+            "¡Los extrañaremos!"
+          ]
+        }
+      ]
+    }
+  ]
+}

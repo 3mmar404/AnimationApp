@@ -1,0 +1,305 @@
+{
+  "modules": [
+    {
+      "id": "module_1",
+      "title": "1. Essenziali (Saluti e Social)",
+      "categories": [
+        {
+          "title": "1.1 Saluti di Sopravvivenza",
+          "phrases": [
+            "Buongiorno! (Fino alle 13:00)",
+            "Buon pomeriggio!",
+            "Buonasera! (Dopo le 16:00)",
+            "Bentornati a casa!",
+            "Ciao! (Bambini/Amici)",
+            "Benvenuti! (Plurale)",
+            "Come stai? / Come state?",
+            "Tutto bene?",
+            "Grazie.",
+            "Prego / Di nulla.",
+            "Mi chiamo...",
+            "Scusi / Scusa."
+          ]
+        },
+        {
+          "title": "1.2 Rompere il Ghiaccio",
+          "phrases": [
+            "Che bel sole oggi, vero?",
+            "È la vostra prima volta a Marsa Alam?",
+            "Da quale parte dell'Italia venite?",
+            "È la prima volta in Egitto?",
+            "Quanto tempo rimanete con noi?",
+            "Avete provato il Mango / il Mare / la Discoteca?",
+            "Vi piace l'hotel?",
+            "Avete già provato le attività?",
+            "Di dove siete?"
+          ]
+        },
+        {
+          "title": "1.3 Presentazioni e Vibes",
+          "phrases": [
+            "Buongiorno ragazzi! Come state oggi? Sono Amar dell'Animazione.",
+            "Ciao, Buongiorno! Sono Amar del team di Animazione.",
+            "Ciao! Sono Amar, dell'Animazione.",
+            "Buon pomeriggio, benvenuti alla nostra spa. Mi chiamo Amar.",
+            "Rendete l'atmosfera migliore, davvero!",
+            "Mi piace la vostra energia!",
+            "Avete una bella energia (Vibe).",
+            "Opzione A: Come va oggi?",
+            "Opzione B: Siete pronti per un po' di sole?",
+            "Opzione C: Tutto bene con voi?"
+          ]
+        },
+        {
+          "title": "1.4 Flirting e Complimenti (Sicuri)",
+          "phrases": [
+            "Dov'è il tuo sorriso? Ah, eccolo!",
+            "Oggi sei il campione della piscina.",
+            "Wow, che bella abbronzatura!",
+            "Mi piacciono i tuoi occhiali, molto eleganti!",
+            "Avete una bellissima famiglia."
+          ]
+        },
+        {
+          "title": "1.5 Umorismo Leggero",
+          "phrases": [
+            "Se non venite con me oggi, sarò triste!",
+            "Dai, ho bisogno della vostra energia nella mia lezione.",
+            "Se partecipi, prometto... solo 50% fatica e 50% divertimento!",
+            "Non preoccuparti, non sono pericoloso... solo un po'!",
+            "Se non partecipi all'attività, sarò triste... molto triste!",
+            "Sembri troppo rilassato... penso che tu abbia bisogno di divertimento!"
+          ]
+        },
+        {
+          "title": "1.6 Domande Comuni",
+          "phrases": [
+            "Da dove venite?",
+            "In quale città vivete?",
+            "Com'è andato il volo?",
+            "Dov'eravate stamattina? Non vi ho visti.",
+            "Cosa avete fatto oggi?",
+            "Siete andati in spiaggia o in piscina?",
+            "Siete andati in escursione oggi?",
+            "Qual è il vostro programma per stasera?",
+            "Dov'è la vostra camera? (Se serve aiuto)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_2",
+      "title": "2. Attività (Sport e Giochi)",
+      "categories": [
+        {
+          "title": "2.1 L'Invito",
+          "phrases": [
+            "Scusate, volete unirvi a noi per [Attività]?",
+            "Iniziamo Yoga tra 5 minuti. È molto rilassante!",
+            "Abbiamo un'attività che inizia ora, venite con me! Sarà divertente.",
+            "Unitevi a noi per Zumba! Solo 30 minuti e vi sentirete benissimo.",
+            "Mi piacerebbe vedervi lì. Promesso, vi divertirete!",
+            "Ehi ragazzi! È ora di Pallavolo! Chi è abbastanza forte per giocare?",
+            "Andiamo! La musica di Aqua Gym è iniziata! Non siate pigri!",
+            "Ehi ragazzi! Aqua gym tra cinque minuti. Andiamo!",
+            "Dai ragazzi! È solo per divertimento, niente stress! L'acqua è calda.",
+            "Buongiorno ragazzi! Spero siate pronti per una divertente partita di pallavolo!",
+            "Persuasione: 'Dai! Solo 10 minuti. Fa bene alla tua energia.'",
+            "Persuasione: 'Non preoccuparti! Ti insegno io. È solo per divertimento.'"
+          ]
+        },
+        {
+          "title": "2.2 Arbitraggio Giochi",
+          "phrases": [
+            "Per favore, state dietro la linea gialla.",
+            "Non oltrepassate la linea, per favore.",
+            "Un passo indietro, per favore.",
+            "È il tuo turno / Tocca a te.",
+            "Aspetta il tuo turno.",
+            "Bel punteggio!",
+            "Freccette: Avete tre lanci (3 tiri).",
+            "Cerca di colpire il centro rosso (Bullseye).",
+            "Bravo! Ottimo lavoro!",
+            "Oh! Che sfortuna! Riprova la prossima volta.",
+            "Prossimo giocatore, prego!"
+          ]
+        },
+        {
+          "title": "2.3 Spirito di Squadra",
+          "phrases": [
+            "Ho bisogno di due squadre, per favore. 3 persone qui, 3 persone là.",
+            "Uno a Zero per il Team Ferrari.",
+            "Uno pari. È un pareggio!",
+            "Cinque pari. Il prossimo punto vince (Match Point)!",
+            "Ok a tutti! Team A a sinistra, Team B a destra.",
+            "Zero a Zero. Servizio / Battuta.",
+            "Wow! Il Team A vince! Stringetevi la mano, bella partita."
+          ]
+        },
+        {
+          "title": "2.4 Comandi Aqua Gym",
+          "phrases": [
+            "Su le mani! Battete le mani! Muovete i fianchi!",
+            "Più veloce! Ancora una volta!",
+            "Su / Giù. Avanti / Indietro. Destra / Sinistra.",
+            "Allungate le braccia. Scuotete le mani.",
+            "Ruotate le spalle.",
+            "Calciate l'acqua! Più forte!",
+            "Inspirate... Espirate.",
+            "Schizzate l'acqua! Bagnate il vostro amico!",
+            "Buongiorno! Benvenuti all'Aqua Gym! Siete pronti?",
+            "Ok, marcia in acqua! 1, 2, 3, 4!",
+            "Dai! Più energia! Più veloce!",
+            "Non fermatevi! Continuate!",
+            "Ultima volta!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_3",
+      "title": "3. Responsabilità (Sicurezza/Bambini)",
+      "categories": [
+        {
+          "title": "3.1 Regole di Sicurezza",
+          "phrases": [
+            "Per la vostra sicurezza.",
+            "Scusi signore. Niente vetro in piscina, per favore. È per la vostra sicurezza.",
+            "Ehi campione! Per favore cammina piano. Si scivola.",
+            "Scusi signore, solo bicchieri di plastica in piscina.",
+            "Per favore, fate attenzione.",
+            "Capisco perfettamente. Parlo subito con il manager per lei.",
+            "Capisco, signore. Mi scuso. Controllo subito con il DJ.",
+            "Sono del team di Animazione, ma chiederò alla Reception di aiutarla.",
+            "Capisco il suo problema."
+          ]
+        },
+        {
+          "title": "3.2 Kids Club (Bambini)",
+          "phrases": [
+            "Per favore, compilate questo modulo di registrazione.",
+            "Ha qualche allergia?",
+            "Per favore, firmi qui.",
+            "Mi spiace signore, deve restare con lui. È la regola dell'Hotel.",
+            "Bambino: 'Voglio fare pipì' -> Tu: 'Ok, cerchiamo il bagno.'",
+            "Bambino Piange: 'Cosa c'è? Vuoi dell'acqua? Dov'è la mamma?'",
+            "Bambino Smarrito: 'Non preoccupatevi, li troveremo.'",
+            "Bambino Smarrito: 'Come ti chiami? Qual è il numero della tua camera?'",
+            "Microfono: 'Attenzione prego. Abbiamo un bambino smarrito di nome [Nome] al Kids Club.'",
+            "Ritiro: 'Eccolo qui! È stato bravissimo oggi.'",
+            "Mi spiace, ho bisogno che il genitore firmi l'uscita.",
+            "Incidente: 'Mi dispiace molto. È caduto mentre giocava. È un piccolo graffio.'"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_4",
+      "title": "4. Vita Notturna (Palco)",
+      "categories": [
+        {
+          "title": "4.1 Microfono e Conduzione",
+          "phrases": [
+            "Signore e Signori, un grande applauso per lo spettacolo migliore della settimana!",
+            "Siete prontiiiiii?!",
+            "Buonasera Signore e Signori! Benvenuti al nostro show time!",
+            "Buonasera a tutti! Siete pronti per lo spettacolo?"
+          ]
+        },
+        {
+          "title": "4.2 Annunci Programma",
+          "phrases": [
+            "Stasera alle [Orario], abbiamo [Nome Spettacolo].",
+            "Stasera alle 8:30, abbiamo la Mini Disco per i bambini.",
+            "Alle 9:30, abbiamo lo Sketch Comico.",
+            "Alle 10:00, è l'ora del Bingo!",
+            "Stasera abbiamo uno spettacolo speciale. Non potete perderlo!",
+            "Mi esibirò anch'io — venite a sostenermi!",
+            "Iniziamo alle 9:30 — venite presto, vi ho tenuto un posto.",
+            "Voglio vedere la vostra energia stasera!"
+          ]
+        },
+        {
+          "title": "4.3 Microfono Mini Disco",
+          "phrases": [
+            "Battete le mani!",
+            "Giratevi / Fate un giro!",
+            "Saltate! Saltate!",
+            "Dove sono i bambini? Fate sentire la vostra voce!",
+            "La Mini Disco inizia tra 5 minuti! Bambini, venite sul palco!"
+          ]
+        },
+        {
+          "title": "4.4 Chiusura",
+          "phrases": [
+            "Grazie a tutti! Ci vediamo domani alle 10. Buonanotte!",
+            "Non dimenticate, domani mattina... Yoga alle 10!",
+            "Ci vediamo domattina. Buonanotte!",
+            "Non dimenticate, abbiamo la festa alle 23:00. Ci vediamo lì!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "module_5",
+      "title": "5. Business (Vendite)",
+      "categories": [
+        {
+          "title": "5.1 Vendita Biglietti (Disco)",
+          "phrases": [
+            "Stasera è una serata speciale! Andiamo al [Nome Club].",
+            "Stasera è LA serata!",
+            "Vengono tutti! Non volete restare soli in camera, vero?",
+            "È la festa più grande della settimana.",
+            "Stasera è Ladies Night. Se mancate, perdete la festa migliore.",
+            "Il biglietto costa solo 15 dollari, inclusi trasporto e un drink.",
+            "Sarà fantastico! Vi prenoto due posti?",
+            "Pensateci: Taxi + Ingresso + Drink = 30$. Con me solo 20$! È un affare!",
+            "Sapete, uscire da soli può essere complicato. Ma con noi, è un trattamento VIP.",
+            "Andiamo con il Bus Ufficiale dell'Hotel, e sarò con voi tutto il tempo.",
+            "Consideratemi la vostra guardia del corpo personale stasera!",
+            "Andiamo insieme, torniamo insieme. Siete al sicuro con me.",
+            "Dai, siate miei ospiti! Vi ho tenuto un tavolo speciale.",
+            "Voglio fare festa con voi! Beviamo qualcosa insieme lì.",
+            "Vi prometto, se non vi piace, potete dare la colpa a me domani!",
+            "Ragazzi, il bus è quasi pieno! Ho solo 4 posti rimasti.",
+            "Obiezione (Stanco): 'Potete dormire in spiaggia domani! Stasera ci si diverte.'",
+            "Obiezione (Prossima volta): 'La prossima volta potrei essere libero! Dai, solo per un'ora.'"
+          ]
+        },
+        {
+          "title": "5.2 Vendita Bingo",
+          "phrases": [
+            "Chi si sente fortunato stasera?",
+            "Il Jackpot è di 200 Euro! Immaginate cosa potete farci!",
+            "Ultimi 3 biglietti rimasti! Chi vuole il numero vincente?",
+            "Buonasera! È l'ora del BINGO! Solo 5 Euro per il jackpot.",
+            "Forse dopo? -> 'Dai! Sembri fortunato stasera! Magari vinci i 100 Euro!'",
+            "Ok, dammene uno. -> 'Ottima scelta! Buona fortuna!'"
+          ]
+        },
+        {
+          "title": "5.3 Recensioni (TripAdvisor)",
+          "phrases": [
+            "Se vi è piaciuta la vacanza, per favore scrivete una recensione per noi su TripAdvisor.",
+            "Posso chiedervi un piccolo favore? Le recensioni sono molto importanti per il mio lavoro.",
+            "Ci vuole solo 1 minuto su TripAdvisor.",
+            "Per favore, non dimenticate di menzionare il mio nome 'Amar'. Mi aiuta con il mio capo.",
+            "Ehi amico mio! Siamo stati benissimo oggi. Facciamoci un selfie per ricordo!",
+            "Dammi il tuo telefono, te la mando ora (AirDrop / WhatsApp).",
+            "Posso chiederti un grande favore? Questa foto mi aiuta molto con il mio capo.",
+            "Se carichi questa foto e menzioni il mio nome, ricevo un bonus! Mi aiuti?"
+          ]
+        },
+        {
+          "title": "5.4 Partenza (Addio)",
+          "phrases": [
+            "Buon viaggio! (Volo sicuro)",
+            "Spero di rivedervi l'anno prossimo!",
+            "Ci mancherete!"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "categories": [
+    {
+      "id": "step_aerobics",
+      "title": "Step Aerobics",
+      "icon": "👟",
+      "description": "High-energy cardio using a raised platform. 32-Count System.",
+      "bpm_range": "128 - 132",
+      "sections": [
+        {
+          "type": "moves",
+          "title": "Core Moves & Vocabulary",
+          "items": [
+            {
+              "name": "Basic Step",
+              "description": "Up Right, Up Left, Down Right, Down Left.",
+              "cue": "Up, Up, Down, Down / Sali, Sali, Scendi, Scendi"
+            },
+            {
+              "name": "V-Step",
+              "description": "Step Wide Right, Step Wide Left, In Right, In Left (Arms in 'V' shape).",
+              "cue": "Open, Open, Close, Close / Apri, Apri"
+            },
+            {
+              "name": "Knee Lift (Repeater)",
+              "description": "Step up, lift knee, step down. Can be single or 3x repeater.",
+              "cue": "Knee Up! / Ginocchio Su!"
+            },
+            {
+              "name": "L-Step",
+              "description": "Step up corner, knee lift side, exit side (L Shape).",
+              "cue": "L-Step / Passo a L"
+            },
+            {
+              "name": "Turn Step",
+              "description": "Step up side, turn body, step down.",
+              "cue": "Turn / Gira"
+            },
+            {
+              "name": "Over the Top",
+              "description": "Walk laterally over the bench.",
+              "cue": "Over the top / Dall'altra parte"
+            },
+            {
+              "name": "Mambo",
+              "description": "Rock forward on the floor/bench, recover, step back.",
+              "cue": "Mambo!"
+            }
+          ]
+        },
+        {
+          "type": "routines",
+          "title": "Standard Combos",
+          "items": [
+            {
+              "title": "Beginner Combo (32 Counts)",
+              "steps": [
+                "(1-8) 2 x Basic Steps (Right Lead)",
+                "(9-16) 2 x V-Steps (Add Arms)",
+                "(17-24) 3 x Knee Repeaters (Changes lead leg to Left)",
+                "(25-32) March on the floor"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "playlist",
+          "title": "Step Music Playlist",
+          "items": [
+            {
+              "title": "Physical",
+              "artist": "Dua Lipa",
+              "bpm": 130,
+              "usage": "Combo"
+            },
+            {
+              "title": "Destination Calabria",
+              "artist": "Alex Gaudino",
+              "bpm": 128,
+              "usage": "High Energy"
+            },
+            {
+              "title": "Call on Me",
+              "artist": "Eric Prydz",
+              "bpm": 126,
+              "usage": "Standard"
+            },
+            {
+              "title": "Levels",
+              "artist": "Avicii",
+              "bpm": 126,
+              "usage": "Standard"
+            },
+            {
+              "title": "Infinity",
+              "artist": "Jaymes Young Remix",
+              "bpm": 125,
+              "usage": "Cool Down/Warm Up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zumba_fitness",
+      "title": "Zumba Fitness",
+      "icon": "💃",
+      "description": "Dance fitness based on Latin rhythms. Non-verbal cueing.",
+      "bpm_range": "130 avg",
+      "sections": [
+        {
+          "type": "moves",
+          "title": "Core Rhythms",
+          "items": [
+            {
+              "name": "Merengue (The March)",
+              "description": "Fast feet, stiff upper body, military march beat (1-2-1-2).",
+              "cue": "Moves: Merengue March, Beto Shuffle, Six Count"
+            },
+            {
+              "name": "Salsa (The Flow)",
+              "description": "Side-to-side, loose hips, sensual (1-2-3... 5-6-7).",
+              "cue": "Moves: Basic Side-to-Side, Forward & Back, Travel Salsa"
+            },
+            {
+              "name": "Reggaeton (The Power)",
+              "description": "Urban, heavy bass, aggressive attitude.",
+              "cue": "Moves: Stomp, Knee Lift, Body Roll, Destroza"
+            },
+            {
+              "name": "Cumbia (The Folk)",
+              "description": "Colombian folk, one leg stays planted.",
+              "cue": "Moves: Sleepy Leg, Sugar Cane, Machete"
+            }
+          ]
+        },
+        {
+          "type": "moves",
+          "title": "Visual Cues (Hand Signals)",
+          "items": [
+            {
+              "name": "Patting Head",
+              "description": "Signal",
+              "cue": "Meaning: From the top / Start again"
+            },
+            {
+              "name": "Pointing 2 Fingers",
+              "description": "Signal",
+              "cue": "Meaning: Do this move 2 times"
+            },
+            {
+              "name": "Hand on Ear",
+              "description": "Signal",
+              "cue": "Meaning: Listen to music / Change coming"
+            },
+            {
+              "name": "Circular Motion",
+              "description": "Signal",
+              "cue": "Meaning: Turn around"
+            },
+            {
+              "name": "Hand Behind Ear",
+              "description": "Signal",
+              "cue": "Meaning: Scream! / Make noise!"
+            }
+          ]
+        },
+        {
+          "type": "playlist",
+          "title": "Zumba Playlist",
+          "items": [
+            {
+              "title": "Danza Kuduro",
+              "artist": "Don Omar",
+              "bpm": 130,
+              "usage": "Core / High Energy"
+            },
+            {
+              "title": "Despacito (Remix)",
+              "artist": "Luis Fonsi",
+              "bpm": 90,
+              "usage": "Cool Down"
+            },
+            {
+              "title": "Tacata",
+              "artist": "Tacabro",
+              "bpm": 130,
+              "usage": "Standard"
+            },
+            {
+              "title": "Fireball",
+              "artist": "Pitbull",
+              "bpm": 128,
+              "usage": "Standard"
+            },
+            {
+              "title": "Pepas",
+              "artist": "Farruko",
+              "bpm": 130,
+              "usage": "Party Anthem"
+            },
+            {
+              "title": "Vivir Mi Vida",
+              "artist": "Marc Anthony",
+              "bpm": 100,
+              "usage": "Salsa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aqua_gym",
+      "title": "Aqua Gym",
+      "icon": "💦",
+      "description": "Water resistance training. High volume, simple moves.",
+      "bpm_range": "120 - 130",
+      "sections": [
+        {
+          "type": "safety",
+          "title": "Safety Rules",
+          "items": [
+            "Instructor must stand on the pool deck (visible).",
+            "Do not enter water unless necessary.",
+            "Demonstrate moves clearly from above."
+          ]
+        },
+        {
+          "type": "moves",
+          "title": "Core Water Moves",
+          "items": [
+            {
+              "name": "Cardio Moves",
+              "description": "High energy movements against resistance.",
+              "cue": "High Knees, Jumping Jacks, Cross-Country Ski, Kick & Clap"
+            },
+            {
+              "name": "Strength Moves",
+              "description": "Muscle toning focus.",
+              "cue": "Water Boxing (Jab/Cross/Uppercut), Twist Jumps"
+            },
+            {
+              "name": "Tool Work",
+              "description": "Using noodles/dumbbells.",
+              "cue": "Push/Pull for arms, Bicycle legs"
+            },
+            {
+              "name": "Fun & Interaction",
+              "description": "Guest interaction.",
+              "cue": "The Wave (Circle), Splash the water"
+            }
+          ]
+        },
+        {
+          "type": "routines",
+          "title": "15-Minute Power Routine",
+          "items": [
+            {
+              "title": "Full Session Flow",
+              "steps": [
+                "Warm-Up (3 mins): Water Walking + Shoulder Rolls",
+                "Cardio Blast (7 mins): Aqua Jacks + Cross-Country Ski",
+                "Strength (3 mins): Water Boxing (Punch the water hard!)",
+                "Cool Down (2 mins): Static stretching against pool wall"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "playlist",
+          "title": "Aqua Playlist",
+          "items": [
+            {
+              "title": "I'm Good (Blue)",
+              "artist": "David Guetta",
+              "bpm": 128,
+              "usage": "Standard"
+            },
+            {
+              "title": "Cold Heart",
+              "artist": "Elton John",
+              "bpm": 120,
+              "usage": "Warm Up/Cool Down"
+            },
+            {
+              "title": "Cake by the Ocean",
+              "artist": "DNCE",
+              "bpm": 124,
+              "usage": "Fun"
+            },
+            {
+              "title": "Cheap Thrills",
+              "artist": "Sia",
+              "bpm": 90,
+              "usage": "Cooldown"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini_disco",
+      "title": "Mini Disco (Kids)",
+      "icon": "👶",
+      "description": "Repetitive moves, big smiles, parental involvement. 20:30 PM.",
+      "bpm_range": "Variable",
+      "sections": [
+        {
+          "type": "routines",
+          "title": "Standard Routine (The Holy Grail)",
+          "items": [
+            {
+              "title": "Mini Disco Setlist Flow",
+              "steps": [
+                "1. Intro: Hotel Signature Song / Cartoon Heroes",
+                "2. Warm-Up: Chu Chu Wa (Forward, Back, Choo Choo)",
+                "3. Viral Hit: Baby Shark (Script: Show me your fins! Fatemi vedere le pinne!)",
+                "4. The Classic: Veo Veo (Hand on eyes, hips)",
+                "5. The Train: A Ram Sam Sam (Conga line)",
+                "6. Action: Head, Shoulders, Knees & Toes",
+                "7. Closing: Slow Song / Lullaby"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "moves",
+          "title": "Themed Days & Activities",
+          "items": [
+            {
+              "name": "Pirate Day",
+              "description": "Treasure hunt, face painting.",
+              "cue": "Theme"
+            },
+            {
+              "name": "Pharaoh Day",
+              "description": "Mummy wrapping contest (toilet paper).",
+              "cue": "Theme"
+            },
+            {
+              "name": "Pizza Party",
+              "description": "Cooking with the chef.",
+              "cue": "Activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shows_skills",
+      "title": "Shows & Special Skills",
+      "icon": "🎭",
+      "description": "Night life performance protocols.",
+      "bpm_range": "N/A",
+      "sections": [
+        {
+          "type": "safety",
+          "title": "Fire Show Protocols",
+          "items": [
+            "Fuel: Kerosene or Paraffin Oil only (NO Gasoline).",
+            "Clothing: 100% Cotton or Denim (No Polyester).",
+            "Spotter: Must have a wet towel and fire extinguisher nearby."
+          ]
+        },
+        {
+          "type": "moves",
+          "title": "Inline Skating",
+          "items": [
+            {
+              "name": "Gear Specs",
+              "description": "Hard wheels (85A/90A) for rough resort tiles.",
+              "cue": "Maintenance"
+            },
+            {
+              "name": "Theme",
+              "description": "Roller Disco Nostalgia.",
+              "cue": "Music: Daddy Cool"
+            }
+          ]
+        },
+        {
+          "type": "playlist",
+          "title": "Show Music",
+          "items": [
+            {
+              "title": "Bangarang",
+              "artist": "Skrillex",
+              "bpm": 0,
+              "usage": "Fire Show"
+            },
+            {
+              "title": "Sail",
+              "artist": "AWOLNATION",
+              "bpm": 0,
+              "usage": "Fire Show"
+            },
+            {
+              "title": "Conquest of Paradise",
+              "artist": "Vangelis",
+              "bpm": 0,
+              "usage": "Fire Show"
+            },
+            {
+              "title": "Daddy Cool",
+              "artist": "Boney M",
+              "bpm": 125,
+              "usage": "Skating"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "master_playlist",
+      "title": "Master Playlist Collection",
+      "icon": "🎵",
+      "description": "Combined database of all animation tracks.",
+      "bpm_range": "Mixed",
+      "sections": [
+        {
+          "type": "playlist",
+          "title": "All Songs",
+          "items": [
+            {
+              "title": "Physical",
+              "artist": "Dua Lipa",
+              "bpm": 130,
+              "usage": "Step - Combo"
+            },
+            {
+              "title": "Destination Calabria",
+              "artist": "Alex Gaudino",
+              "bpm": 128,
+              "usage": "Step - High Energy"
+            },
+            {
+              "title": "Danza Kuduro",
+              "artist": "Don Omar",
+              "bpm": 130,
+              "usage": "Zumba - Core"
+            },
+            {
+              "title": "Pepas",
+              "artist": "Farruko",
+              "bpm": 130,
+              "usage": "Zumba - Party"
+            },
+            {
+              "title": "Gasolina",
+              "artist": "Daddy Yankee",
+              "bpm": 96,
+              "usage": "Zumba - Reggaeton"
+            },
+            {
+              "title": "Level Up",
+              "artist": "Ciara",
+              "bpm": 130,
+              "usage": "Aqua - Cardio"
+            },
+            {
+              "title": "Sugar",
+              "artist": "Maroon 5",
+              "bpm": 120,
+              "usage": "Aqua - Warm Up"
+            },
+            {
+              "title": "Hips Don’t Lie",
+              "artist": "Shakira",
+              "bpm": 0,
+              "usage": "Show - Dance Show"
+            },
+            {
+              "title": "Jerusalema",
+              "artist": "Master KG",
+              "bpm": 124,
+              "usage": "Show - Group Dance"
+            },
+            {
+              "title": "Soco Bate Vira",
+              "artist": "Xuxa",
+              "bpm": 0,
+              "usage": "Kids - Coordination"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

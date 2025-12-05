@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#121212">
+    <meta name="description" content="Hotel Animation Helper Tool">
+    <title>Animator Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Sticky Bar -->
+    <header class="top-bar">
+        <div class="header-row-top">
+            <div class="logo-area">
+                <h1>Animator<span>Pro</span></h1>
+            </div>
+            <!-- Language Selector -->
+            <select id="lang-switch" class="lang-selector">
+                <option value="en">🇬🇧 EN</option>
+                <option value="it">🇮🇹 IT</option>
+                <option value="de">🇩🇪 DE</option>
+                <option value="es">🇪🇸 ES</option>
+                <option value="ru">🇷🇺 RU</option>
+            </select>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search scripts..." autocomplete="off">
+            <span class="search-icon">🔍</span>
+        </div>
+    </header>
+
+    <!-- Main Content Views -->
+    <main id="app-content">
+        <!-- Scripts View -->
+        <div id="view-scripts" class="view-section active">
+            <!-- Dynamic Script Modules loaded here -->
+        </div>
+
+        <!-- Activities View -->
+        <div id="view-activities" class="view-section hidden">
+            <!-- Dynamic Activities loaded here -->
+        </div>
+
+        <!-- Library View -->
+        <div id="view-library" class="view-section hidden">
+            <!-- Dynamic Library content loaded here -->
+        </div>
+
+        <!-- My Notes View -->
+        <div id="view-notes" class="view-section hidden">
+            <div class="note-controls">
+                <h3>My Custom Phrases</h3>
+                <form id="add-note-form">
+                    <input type="text" id="new-note-input" placeholder="Enter new phrase..." required>
+                    <button type="submit" class="btn-add">Save</button>
+                </form>
+            </div>
+            <div id="notes-container">
+                <!-- User LocalStorage phrases loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-item active" data-target="view-scripts">
+            <span class="icon">💬</span>
+            <span class="label">Scripts</span>
+        </button>
+        <button class="nav-item" data-target="view-activities">
+            <span class="icon">💃</span>
+            <span class="label">Activs</span>
+        </button>
+        <button class="nav-item" data-target="view-library">
+            <span class="icon">📚</span>
+            <span class="label">Library</span>
+        </button>
+        <button class="nav-item" data-target="view-notes">
+            <span class="icon">📝</span>
+            <span class="label">Notes</span>
+        </button>
+    </nav>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="hidden">Copied to clipboard!</div>
+
+    <div class="credits">Developed with ❤️ by <span class="author">Amar</span> © 2025</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

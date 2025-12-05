@@ -1,0 +1,81 @@
+{
+  "chapters": [
+    {
+      "id": "chap_13",
+      "title": "13. Restaurant (المطعم)",
+      "topics": [
+        {
+          "title": "76. Asking for a table (طلب ترابيزة)",
+          "phrases": [
+            { "en": "I'd like a table for two, please.", "ar": "عايز ترابيزة لشخصين لو سمحت." },
+            { "en": "Do you have a reservation?", "ar": "هل عندك حجز؟" },
+            { "en": "Could we have a table by the window?", "ar": "ممكن ترابيزة جنب الشباك؟" }
+          ]
+        },
+        {
+          "title": "83. When a restaurant is out of an item (لما صنف يخلص)",
+          "phrases": [
+            { "en": "I'm sorry, we are out of that.", "ar": "آسف، الصنف ده خلص." },
+            { "en": "Can I suggest something else?", "ar": "ممكن أقترح عليك حاجة تانية؟" }
+          ]
+        },
+        {
+          "title": "94. Making a complaint (تقديم شكوى)",
+          "phrases": [
+            { "en": "Excuse me, this isn't what I ordered.", "ar": "لو سمحت، مش ده اللي أنا طلبته." },
+            { "en": "The food is cold.", "ar": "الأكل بارد." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap_11",
+      "title": "11. Weather (الطقس)",
+      "topics": [
+        {
+          "title": "69. Starting conversation about weather (دردشة عن الجو)",
+          "phrases": [
+            { "en": "Beautiful day, isn't it?", "ar": "يوم جميل، مش كدة؟" },
+            { "en": "It looks like it's going to rain.", "ar": "شكلها هتمطر." },
+            { "en": "It's extremely hot today.", "ar": "الجو حر جداً النهاردة." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap_12",
+      "title": "12. Being Late (التأخير)",
+      "topics": [
+        {
+          "title": "73. Apologizing for being late (الاعتذار عن التأخير)",
+          "phrases": [
+            { "en": "I'm sorry I'm late.", "ar": "أنا آسف على التأخير." },
+            { "en": "I got stuck in traffic.", "ar": "كنت محبوس في الزحمة." },
+            { "en": "It won't happen again.", "ar": "مش هتتكرر تاني." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap_38",
+      "title": "38. Repeating (تكرار الكلام)",
+      "topics": [
+        {
+          "title": "Repeating what you said (تكرار ما قلته)",
+          "phrases": [
+            { "en": "Let me repeat myself.", "ar": "خليني أعيد اللي قلته." },
+            { "en": "As I've said before...", "ar": "زي ما قلت قبل كده..." },
+            { "en": "To reiterate...", "ar": "عشان أعيد وأؤكد..." }
+          ]
+        },
+        {
+          "title": "Digressions (الخروج عن الموضوع)",
+          "phrases": [
+            { "en": "That's beside the point.", "ar": "ده بره الموضوع." },
+            { "en": "But I digress.", "ar": "بس أنا خرجت عن الموضوع (نرجع لمرجوعنا)." }
+          ]
+        }
+      ]
+    }
+  ]
+}
