@@ -235,36 +235,41 @@ document.addEventListener('DOMContentLoaded', () => {
         return div;
     }
 
-    // --- THE FIXED SPEAK TEXT FUNCTION ---
     function speakText(text, lang) {
-        window.speechSynthesis.cancel(); // Stop previous
+        // 1. Stop any current speech
+        window.speechSynthesis.cancel();
 
+        // 2. Define the target language code clearly
+        const targetLang = TTS_CODES[lang] || 'en-US';
+
+        // 3. Setup the utterance
         const utterance = new SpeechSynthesisUtterance(text);
-        const targetLangCode = TTS_CODES[lang] || 'en-US';
-        utterance.lang = targetLangCode;
-        utterance.rate = 0.9;
+        utterance.lang = targetLang; // This alone helps iOS sometimes
+        utterance.rate = 0.9; // Slightly slower is better for learning
 
-        // Force Voice Selection
-        if (availableVoices.length === 0) {
-            availableVoices = window.speechSynthesis.getVoices();
-        }
-
-        // Try exact match (e.g., 'it-IT')
-        let selectedVoice = availableVoices.find(v => v.lang === targetLangCode);
+        // 4. SMART VOICE SELECTION (Mobile Optimized)
+        // Re-fetch voices instantly (Crucial for mobile Safari/Chrome)
+        let voices = window.speechSynthesis.getVoices();
         
-        // Fallback: Try language code match (e.g., 'it')
+        // Strategy A: Exact Match (e.g., it-IT)
+        let selectedVoice = voices.find(v => v.lang === targetLang);
+
+        // Strategy B: General Match (e.g., 'it' inside 'it-IT')
         if (!selectedVoice) {
-            const shortCode = targetLangCode.split('-')[0];
-            selectedVoice = availableVoices.find(v => v.lang.startsWith(shortCode));
+            const shortCode = targetLang.split('-')[0]; // 'it' from 'it-IT'
+            selectedVoice = voices.find(v => v.lang.startsWith(shortCode));
         }
 
+        // Strategy C: iOS Fallback (Don't force voice if not found, rely on lang prop)
         if (selectedVoice) {
             utterance.voice = selectedVoice;
-            console.log('Speaking with voice:', selectedVoice.name); // Debug
+            console.log('Voice found:', selectedVoice.name);
         } else {
-            console.warn('No specific voice found for:', targetLangCode);
+            console.warn('No voice found for', targetLang, '- Relying on OS default');
+            // iOS tries to match 'utterance.lang' automatically if we don't force a bad voice
         }
 
+        // 5. Speak
         window.speechSynthesis.speak(utterance);
     }
 
