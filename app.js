@@ -1,29 +1,27 @@
-// Register Service Worker for Offline Use
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-            .then(reg => console.log('SW Registered!', reg))
-            .catch(err => console.log('SW Failed', err));
-    });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. CONFIGURATION ---
     const ACTIVITY_URL = 'activities.json';
     const LIBRARY_URL = 'library.json';
     
+    // Mapping our codes to Browser TTS codes
     const TTS_CODES = {
-        'en': 'en-US', 'it': 'it-IT', 'de': 'de-DE', 'es': 'es-ES', 'ru': 'ru-RU'
+        'en': 'en-US',
+        'it': 'it-IT',
+        'de': 'de-DE',
+        'es': 'es-ES',
+        'ru': 'ru-RU'
     };
 
+    // State
     let currentLang = 'en'; 
-    let currentView = 'view-scripts'; // Track active view for search
+    let currentView = 'view-scripts'; 
+    let availableVoices = []; // Store voices
 
     // --- 2. DOM ELEMENTS ---
     const scriptsContainer = document.getElementById('view-scripts');
     const activitiesContainer = document.getElementById('view-activities');
-    const libraryContainer = document.getElementById('view-library'); // New
+    const libraryContainer = document.getElementById('view-library');
     const notesContainer = document.getElementById('notes-container');
     const navButtons = document.querySelectorAll('.nav-item');
     const views = document.querySelectorAll('.view-section');
@@ -39,10 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
         setupSearch();
         setupNotes();
         setupLanguageSwitch();
+        
+        // Pre-load voices for TTS
+        if ('speechSynthesis' in window) {
+            // Chrome loads voices asynchronously
+            window.speechSynthesis.onvoiceschanged = () => {
+                availableVoices = window.speechSynthesis.getVoices();
+            };
+            // Try getting them immediately just in case
+            availableVoices = window.speechSynthesis.getVoices();
+        }
 
         fetchScripts(currentLang);
         fetchActivities();
-        fetchLibrary(); // Load Library
+        fetchLibrary();
         loadUserNotes();
     }
 
@@ -66,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const res = await fetch(ACTIVITY_URL);
             const data = await res.json();
             renderActivities(data);
-        } catch (error) {
-            console.error('Activity Error:', error);
-        }
+        } catch (error) { console.error('Activity Error:', error); }
     }
 
     async function fetchLibrary() {
@@ -76,15 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const res = await fetch(LIBRARY_URL);
             const data = await res.json();
             renderLibrary(data.chapters);
-        } catch (error) {
-            console.error('Library Error:', error);
-            libraryContainer.innerHTML = `<p style="color:var(--danger); text-align:center;">Error loading Library.</p>`;
-        }
+        } catch (error) { console.error('Library Error:', error); }
     }
 
     // --- 5. RENDER LOGIC ---
 
-    // Render SCRIPTS
     function renderScripts(modules) {
         scriptsContainer.innerHTML = ''; 
         modules.forEach(mod => {
@@ -98,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.appendChild(catTitle);
 
                 cat.phrases.forEach(phrase => {
-                    // Script Cards: Text + Speak (Current Lang) + Copy
+                    // Pass currentLang to ensure correct voice
                     const card = createCard(phrase, true, currentLang); 
                     content.appendChild(card);
                 });
@@ -107,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Render ACTIVITIES
     function renderActivities(data) {
         activitiesContainer.innerHTML = '';
         if (!data.categories) return;
@@ -115,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
         data.categories.forEach(cat => {
             const catDiv = createAccordion(`${cat.icon || ''} ${cat.title} <small>(${cat.bpm_range || ''})</small>`);
             const content = catDiv.querySelector('.module-content');
-
             if (cat.description) content.innerHTML += `<p class="desc">${cat.description}</p>`;
 
             if (cat.sections) {
@@ -127,8 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (section.items) {
                         section.items.forEach(item => {
-                            // Render Logic for Activities (Playlist, Moves, etc.)
-                            // ... (Same logic as previous app.js for activities) ...
                             const card = document.createElement('div');
                             card.className = 'card';
                             
@@ -150,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Render LIBRARY (New) 📚
     function renderLibrary(chapters) {
         libraryContainer.innerHTML = '';
         chapters.forEach(chap => {
@@ -166,28 +163,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if(topic.phrases) {
                         topic.phrases.forEach(pair => {
-                            // Library Card: EN on top, AR below
                             const card = document.createElement('div');
-                            card.className = 'card phrase-card library-card'; // Special class for styling
+                            card.className = 'card phrase-card library-card';
                             
                             const textDiv = document.createElement('div');
                             textDiv.style.flex = '1';
-                            textDiv.innerHTML = `
-                                <div class="lib-en">${pair.en}</div>
-                                <div class="lib-ar">${pair.ar}</div>
-                            `;
+                            textDiv.innerHTML = `<div class="lib-en">${pair.en}</div><div class="lib-ar">${pair.ar}</div>`;
 
-                            // Action Buttons
                             const actionsDiv = document.createElement('div');
                             actionsDiv.className = 'action-buttons';
 
-                            // Speak EN
+                            // Speak Button (Always EN for library)
                             const speakBtn = document.createElement('button');
                             speakBtn.className = 'icon-btn speak-btn';
                             speakBtn.innerHTML = '🔊';
                             speakBtn.onclick = (e) => { e.stopPropagation(); speakText(pair.en, 'en'); };
 
-                            // Copy EN
                             const copyBtn = document.createElement('button');
                             copyBtn.className = 'icon-btn copy-btn';
                             copyBtn.innerHTML = '📋';
@@ -195,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                             actionsDiv.appendChild(speakBtn);
                             actionsDiv.appendChild(copyBtn);
-
                             card.appendChild(textDiv);
                             card.appendChild(actionsDiv);
                             content.appendChild(card);
@@ -213,12 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const div = document.createElement('div');
         div.className = 'module-container';
         if(id) div.id = id;
-        
-        div.innerHTML = `
-            <div class="module-header"><span>${titleHtml}</span></div>
-            <div class="module-content"></div>
-        `;
-        
+        div.innerHTML = `<div class="module-header"><span>${titleHtml}</span></div><div class="module-content"></div>`;
         div.querySelector('.module-header').onclick = () => div.classList.toggle('open');
         return div;
     }
@@ -226,7 +211,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function createCard(text, withAudio = false, langCode = 'en') {
         const div = document.createElement('div');
         div.className = 'card phrase-card';
-        
         div.innerHTML = `<span class="card-text">${text}</span>`;
         
         const actionsDiv = document.createElement('div');
@@ -236,6 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const speakBtn = document.createElement('button');
             speakBtn.className = 'icon-btn speak-btn';
             speakBtn.innerHTML = '🔊';
+            // Pass the correct language code to speakText
             speakBtn.onclick = (e) => { e.stopPropagation(); speakText(text, langCode); };
             actionsDiv.appendChild(speakBtn);
         }
@@ -250,11 +235,36 @@ document.addEventListener('DOMContentLoaded', () => {
         return div;
     }
 
+    // --- THE FIXED SPEAK TEXT FUNCTION ---
     function speakText(text, lang) {
-        window.speechSynthesis.cancel();
+        window.speechSynthesis.cancel(); // Stop previous
+
         const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = TTS_CODES[lang] || 'en-US';
+        const targetLangCode = TTS_CODES[lang] || 'en-US';
+        utterance.lang = targetLangCode;
         utterance.rate = 0.9;
+
+        // Force Voice Selection
+        if (availableVoices.length === 0) {
+            availableVoices = window.speechSynthesis.getVoices();
+        }
+
+        // Try exact match (e.g., 'it-IT')
+        let selectedVoice = availableVoices.find(v => v.lang === targetLangCode);
+        
+        // Fallback: Try language code match (e.g., 'it')
+        if (!selectedVoice) {
+            const shortCode = targetLangCode.split('-')[0];
+            selectedVoice = availableVoices.find(v => v.lang.startsWith(shortCode));
+        }
+
+        if (selectedVoice) {
+            utterance.voice = selectedVoice;
+            console.log('Speaking with voice:', selectedVoice.name); // Debug
+        } else {
+            console.warn('No specific voice found for:', targetLangCode);
+        }
+
         window.speechSynthesis.speak(utterance);
     }
 
@@ -269,7 +279,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 7. NAVIGATION & SEARCH ---
-
     function setupNavigation() {
         navButtons.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -277,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.add('active');
                 
                 const targetId = btn.getAttribute('data-target');
-                currentView = targetId; // Track current view for search
+                currentView = targetId; 
                 
                 views.forEach(v => {
                     v.classList.add('hidden');
@@ -288,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
                 
-                searchInput.value = ''; // Reset search on nav change
+                searchInput.value = ''; 
                 searchInput.placeholder = `Search ${btn.querySelector('.label').innerText}...`;
             });
         });
@@ -297,16 +306,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupSearch() {
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase();
-            // Only search within the CURRENT active view
             const activeContainer = document.getElementById(currentView);
             const cards = activeContainer.querySelectorAll('.phrase-card, .activity-card');
             
             cards.forEach(card => {
                 const text = card.innerText.toLowerCase();
                 const parentModule = card.closest('.module-container');
-                
                 if (text.includes(query)) {
-                    card.style.display = 'flex'; // or block based on type
+                    card.style.display = 'flex'; // or block
                     if(query.length > 1 && parentModule) parentModule.classList.add('open');
                 } else {
                     card.style.display = 'none';
@@ -323,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 8. NOTES ---
-    function setupNotes() { /* ... (Same as before) ... */ 
+    function setupNotes() {
         if(!noteForm) return;
         noteForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -344,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderNotes(notes) {
         notesContainer.innerHTML = '';
         notes.forEach((note, index) => {
-            const card = createCard(note, true, 'en'); // Default en for notes
+            const card = createCard(note, true, 'en');
             const delBtn = document.createElement('span');
             delBtn.className = 'delete-btn';
             delBtn.innerHTML = '🗑️';
